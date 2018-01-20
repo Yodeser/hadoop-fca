@@ -1,19 +1,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
-	xmlns:context="http://www.springframework.org/schema/context" 
-	xmlns:tx="http://www.springframework.org/schema/tx"	
-	xsi:schemaLocation="
-	http://www.springframework.org/schema/beans     
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
-    http://www.springframework.org/schema/context 
-    http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/data/jpa
     http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 	
-	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource">
+	<bean id="dataSource" class="org.apache.tomcat.dbcp.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="${databaseDriver}" />
 		<property name="url" value="${databaseConnString}" />
 		<property name="username" value="${databaseUser}" />
@@ -43,7 +39,7 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
 		<!-- spring based scanning for entity classes> -->
-		<property name="packagesToScan" value="edu.uoc.mgarciaroig.pfc.fca.web.persistence.data.rawmodel" />
+		<property name="packagesToScan" value="com.mgarciaroig.pfc.fca.web.persistence.data.rawmodel" />
 	</bean>
 		
 	<bean id="transactionManager"
@@ -54,6 +50,6 @@
 	<!-- Enables the Hibernate @Transactional programming model -->	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 
-	<jpa:repositories base-package="edu.uoc.mgarciaroig.pfc.fca.web.persistence.data.repo" />
+	<jpa:repositories base-package="com.mgarciaroig.pfc.fca.web.persistence.data.repo" />
 
 </beans>

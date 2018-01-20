@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 /**
  * Mapper to collect all object id's by enabled attribute
- * @author Miguel �?ngel García Roig (mgarciaroig@uoc.edu)
+ * @author Miguel �?ngel Garc铆a Roig (mgarciaroig@uoc.edu)
  *
  */
 public class FormalContextDataPrepareMapper extends

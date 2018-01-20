@@ -11,7 +11,7 @@
 		</layout>
 	</appender>
 
-	<logger name="edu.uoc.mgarciaroig.pfc.fca.web.controller" level="debug" additivity="false">
+	<logger name="com.mgarciaroig.pfc.fca.web.controller" level="debug" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
 

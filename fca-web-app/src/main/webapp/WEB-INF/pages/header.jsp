@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Mapa interactivo autom�tico de conceptos: Combinaci�n de Big Data y FCA distribuido</title>
-  <meta name="description" content="Mapa interactivo autom�tico de conceptos: Combinaci�n de Big Data y FCA distribuido">
-  <meta name="author" content="Miguel Angel Garc�a Roig (mgarciaroig@uoc.edu)">
+  <title>自动交互概念图：大数据和分布式FCA的结合</title>
+  <meta name="description" content="自动交互概念图：大数据和分布式FCA的结合">
+  <meta name="author" content="Miguel Angel Garc�a Roig (mgarciaroig@uoc.edu)">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   
@@ -91,13 +91,13 @@
 <body>
 
 	<header>
-  		<h1>Mapa interactivo autom�tico de conceptos: Combinaci�n de Big Data y FCA distribuido</h1>
+  		<h1>Mapa interactivo autom�tico de conceptos: Combinaci�n de Big Data y FCA distribuido</h1>
 	</header>	
 	
 	<nav role="main">
 		
 		<ul>
-			<li class="title">Listado de objetos</li>
+			<li class="title">对象列表</li>
 		
 			<c:forEach items="${allObjects}" var="object">
 			
