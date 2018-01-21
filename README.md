@@ -1,6 +1,6 @@
 # hadoop-fca
-> Automatic map of concepts: Combination of Big Data and distributed FCA
-  Forked from [magarciaroig/hadoop-fca](https://github.com/magarciaroig/hadoop-fca)
+> Automatic map of concepts: Combination of Big Data and distributed FCA.
+Forked from [magarciaroig/hadoop-fca](https://github.com/magarciaroig/hadoop-fca)
 
 ## Start project
 ### Develop Environment(Windows 10)
