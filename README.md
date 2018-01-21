@@ -16,6 +16,7 @@
 1. configure your shadowsocks.
 2. configure your IDE(Intellij IDEA) with Maven and JAva
 3. [Configure Hadoop](http://blog.csdn.net/rav009/article/details/70214788)
+4. import createTable.sql to Mysql
 4. Maven->Import pom.xml->mvn clean package
 5. transfer ${project-name}.war to ${tomcat_dir}/webapps -> start tomcat
 
